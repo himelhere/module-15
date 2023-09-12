@@ -10,14 +10,80 @@
     <link href="https://cdn.jsdelivr.net/npm/daisyui@3.7.3/dist/full.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
 
+    <!-- Customize Config -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        color1: '#F85559',
+                    }
+                }
+            }
+        }
+    </script>
     <!-- Google font -->
-
-    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
     <!-- Custom styles -->
+    <style>
+        .font-lato {
+            font-family: 'Lato', sans-serif;
+        }
+    </style>
+
 </head>
 
 <body>
-    <header>
+    <!-- Header Section -->
+    <header class="max-w-full lg:max-w-screen-2xl px-8 mx-auto lg:px-32 ">
+        <!-- Nav section -->
+        <nav>
+            <div class="navbar lg:flex-row flex-row-reverse justify-between my-2 lg:my-10 px-0 lg:px-10 py-8 lg:rounded-[600px] bg-white lg:bg-color1">
+                <div class=" navbar-start w-auto lg:w-6/12">
+                    <div class="dropdown">
+                        <label tabindex="0" class="btn btn-ghost lg:hidden">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 6h16M4 12h8m-8 6h16" />
+                            </svg>
+                        </label>
+                        <ul tabindex="0"
+                            class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                            <li><a>Home</a></li>
+                            <li><a>About us</a></li>
+                            <li><a>Shop</a></li>
+                            <li><a>All fruits</a></li>
+                        </ul>
+                    </div>
+                    <ul class="menu text-white font-medium hidden lg:flex menu-horizontal  px-1">
+                        <li><a>Home</a></li>
+                        <li><a>About us</a></li>
+                        <li><a>Shop</a></li>
+                        <li><a>All fruits</a></li>
+                    </ul>
+
+                </div>
+                <div class="navbar-center gap-4 items-center">
+                    <img class="w-2/12 lg:3/12" src="./images/logo.png" alt="logo">
+                    <a class="normal-case text-xl lg:text-4xl text-black lg:text-white font-bold">Fruit Burst</a>
+                </div>
+                <div class="navbar-end relative hidden lg:flex">
+                    <input type="text" class="border border-gray-300 rounded-md pl-10 pr-4 py-2 w-64"
+                        placeholder="Search here">
+                    <div class="absolute inset-y-0 right-0 pr-3 flex items-center pointer-events-none">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                            stroke="currentColor" class="w-6 h-6">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z" />
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <!-- Slider section -->
 
     </header>
     <main>
